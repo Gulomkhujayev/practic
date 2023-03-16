@@ -9,7 +9,12 @@ let body = document.querySelector("body");
 btn.addEventListener("click", () => {
   if (input1.value === input2.value && input1.value === input3.value) {
     body.style.background = "green";
+    let add=document.querySelector(".title")
+    add.innerHTML="CORREKT"
+    
   } else {
     body.style.background = "red";
+    let add=document.querySelector(".title")
+    add.innerHTML="ERROR"
   }
 });

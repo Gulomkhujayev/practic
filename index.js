@@ -8,22 +8,15 @@ let body = document.querySelector("body");
 let bollean = true;
 
 btn.addEventListener("click", () => {
-  if (bollean == true) {
-    if (
-      input1.value === input2.value &&
-      input1.value === input3.value &&
-      input1.value !== "" &&
-      input2.value !== "" &&
-      input3.value !== ""
-    ) {
-      body.style.background = "green";
-      btn.textContent = "Clear";
-    } else {
-      body.style.background = "red";
-    }
-    bollean = false;
+  if (input1.value === input2.value && input1.value === input3.value) {
+    body.style.background = "green";
+    let add=document.querySelector(".title")
+    add.innerHTML="CORREKT"
+    
   } else {
-    clear();
+    body.style.background = "red";
+    let add=document.querySelector(".title")
+    add.innerHTML="ERROR"
   }
 });
 

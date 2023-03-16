@@ -8,7 +8,7 @@ let body = document.querySelector("body");
 let bollean = true;
 
 btn.addEventListener("click", () => {
-  if (bollean) {
+  if (bollean == true) {
     if (
       input1.value === input2.value &&
       input1.value === input3.value &&
@@ -17,12 +17,9 @@ btn.addEventListener("click", () => {
       input3.value !== ""
     ) {
       body.style.background = "green";
-      let add = document.querySelector(".title");
-      add.innerHTML = "CORREKT";
+      btn.textContent = "Clear";
     } else {
       body.style.background = "red";
-      let add = document.querySelector(".title");
-      add.innerHTML = "ERROR";
     }
     bollean = false;
   } else {

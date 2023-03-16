@@ -14,7 +14,7 @@ body {
   height: 100vh;
 }
 
-#input{
+input{
     padding: 5px 20px;
     height: 40px;
     border-radius: 10px;

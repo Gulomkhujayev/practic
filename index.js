@@ -17,6 +17,7 @@ btn.addEventListener("click", () => {
       input3.value !== ""
     ) {
       body.style.background = "green";
+      btn.textContent = "Clear";
     } else {
       body.style.background = "red";
     }
@@ -31,5 +32,6 @@ function clear() {
   input2.value = "";
   input3.value = "";
   body.style.background = "#fff";
+  btn.textContent = "Click me";
   bollean = true;
 }
